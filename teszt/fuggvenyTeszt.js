@@ -6,6 +6,7 @@ QUnit.module('fizzbuzz', function() {
         assert.ok(typeof(fizzbuzz) === 'function');
     });
 
+    
 
     QUnit.test('2', assert => {
         assert.ok(fizzbuzz(2) === 2);
