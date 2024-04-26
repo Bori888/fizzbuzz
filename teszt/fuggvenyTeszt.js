@@ -6,7 +6,7 @@ QUnit.module('fizzbuzz', function() {
         assert.ok(typeof(fizzbuzz) === 'function');
     });
 
-    
+
 
     QUnit.test('2', assert => {
         assert.ok(fizzbuzz(2) === 2);
@@ -62,5 +62,12 @@ QUnit.module('fizzbuzz', function() {
         } );
         
     });
+    QUnit.test('negativ vagy 0 tesztelese', assert => {
+        let fizzek = [-5, 0, 20, 150, -1];
+        fizzek.forEach(elem =>{
+            assert.equal(fizzbuzz(elem), "Pozitiv szam lehet csak benne");
+        } );
+    });
+
 
   });
